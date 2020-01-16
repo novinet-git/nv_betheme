@@ -274,19 +274,22 @@ body.rex-is-logged-out .navbar-brand img {
   z-index: 3;
 }
 
-
+.rex-page-main-inner {
+  padding-left: 25px;
+  padding-right: 25px;
+}
 
 .rex-nav-top .container-fluid .navbar-brand {
 }
 
 .rextree {
-  background: #324050;
+  background: white;
   border-left: 1px solid rgba(156, 165, 178, 0.3);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .rextree a > i {
-  color: #fff;
+  color: #808080;
 }
 
 .rextree .startarticle > a > i {
@@ -300,28 +303,39 @@ body.rex-is-logged-out .navbar-brand img {
 .rextree .rtpanel {
   border: none;
   background-color: transparent;
-  color: white;
+  color: #222d45;
 }
 
 .jstree-anchor,
 .jstree-anchor:link,
-.jstree-anchor:visited,
+.jstree-anchor:visited {}
 .jstree-anchor:hover,
 .jstree-anchor:active {
-  color: #fff;
+  color: #222d45;
 }
 
 .rex-nav-main {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background:white
 }
+.rex-nav-main-title {
+color: #222d45;
+}
+
+.rex-nav-main li > a {
+  color: #222d45;
+}
+
 
 .rex-nav-main li > a:hover,
 .rex-nav-main li > a:focus {
-  color: #fff;
+  background-color: {{color}};
+  color: white;
 }
 
-.rextree-left .rextree .jstree-wholerow-hovered {
-  background: #283542;
+.rextree-left .rextree .jstree-wholerow-hovered,
+.rextree-left .rextree .jstree-wholerow-clicked {
+  background: #efefef;
 }
 
 .rex-slice-select > .dropdown > .btn-default {

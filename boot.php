@@ -1,6 +1,7 @@
 <?
 $oBeTheme = new nvBeTheme;
-$oBeTheme->generateFiles();
+// debug mode, bei jedem aufruf wird die css-datei neu generiert
+// $oBeTheme->generateFiles();
 
 
 // Include backend assets

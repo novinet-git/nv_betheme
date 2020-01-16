@@ -6,6 +6,11 @@ $form = rex_config_form::factory($oBeTheme->addon->name);
 
 
 
+$field = $form->addSelectField('style',$value = null,['class'=>'form-control selectpicker']);
+$field->setLabel("Select");
+$select = $field->getSelect();
+$select->addOption('Standard', '');
+$select->addOption('Helle Navigation',"_bright");
 
 $field = $form->addInputField('text', 'color', null, ["class" => "form-control"]);
 $field->setLabel($this->i18n('nv_betheme_color'));
