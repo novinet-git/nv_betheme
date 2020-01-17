@@ -99,6 +99,9 @@ a {
   transition: all 0.2s ease 0.15s;
 }
 
+h1 {
+  color: {{color}};
+}
 .bg-primary {
   background-color: {{color}};
 }
@@ -106,6 +109,22 @@ a {
 	background-color: #f5f5f5;
 	padding-top: 0;
   }
+
+
+.btn-clang {
+  color: {{color}};
+}
+
+.btn-clang:hover {
+  color: {{color}};
+}
+
+.btn-clang:active, .btn-clang.active, .open>.btn-clang.dropdown-toggle,
+.btn-clang.active:hover, .btn-clang.active:focus, .btn-clang.active.focus {
+  background-color: {{color}};
+  border-color: {{color}};
+}
+
 
 .nav-tabs > li > a {
   margin-right: 0;
