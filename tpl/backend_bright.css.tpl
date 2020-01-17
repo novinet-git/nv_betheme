@@ -100,7 +100,7 @@ a {
 }
 
 h1 {
-  color: {{color}};
+  color: #222d45;
 }
 .bg-primary {
   background-color: {{color}};
