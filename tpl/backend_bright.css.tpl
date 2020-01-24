@@ -91,17 +91,8 @@ body {
 
 a {
   color: {{color}};
-  -o-transition: all 0.2s ease 0.15s;
-  -ms-transition: all 0.2s ease 0.15s;
-  -moz-transition: all 0.2s ease 0.15s;
-  -webkit-transition: all 0.2s ease 0.15s;
-  /* ...and now override with proper CSS property */
-  transition: all 0.2s ease 0.15s;
 }
 
-h1 {
-  color: #222d45;
-}
 .bg-primary {
   background-color: {{color}};
 }
@@ -109,20 +100,6 @@ h1 {
 	background-color: #f5f5f5;
 	padding-top: 0;
   }
-
-.btn-clang {
-  color: {{color}};
-}
-
-.btn-clang:hover {
-  color: {{color}};
-}
-
-.btn-clang:active, .btn-clang.active, .open>.btn-clang.dropdown-toggle,
-.btn-clang.active:hover, .btn-clang.active:focus, .btn-clang.active.focus {
-  background-color: {{color}};
-  border-color: {{color}};
-}
 
 .nav-tabs > li > a {
   margin-right: 0;
@@ -358,12 +335,6 @@ color: #222d45;
 .rex-slice-select > .dropdown > .btn-default {
   color: {{color}};
   background-color: #efefef;
-  -o-transition: all 0.2s ease 0.15s;
-  -ms-transition: all 0.2s ease 0.15s;
-  -moz-transition: all 0.2s ease 0.15s;
-  -webkit-transition: all 0.2s ease 0.15s;
-  /* ...and now override with proper CSS property */
-  transition: all 0.2s ease 0.15s;
 }
 
 .rex-slice-select > .dropdown > .btn-default:focus,
@@ -380,12 +351,6 @@ color: #222d45;
   border-color: {{color}};
   border: 0;
   color: #fff;
-  -o-transition: all 0.2s ease 0.15s;
-  -ms-transition: all 0.2s ease 0.15s;
-  -moz-transition: all 0.2s ease 0.15s;
-  -webkit-transition: all 0.2s ease 0.15s;
-  /* ...and now override with proper CSS property */
-  transition: all 0.2s ease 0.15s;
 }
 .rex-nav-meta .text-muted {
   color: #fff;
