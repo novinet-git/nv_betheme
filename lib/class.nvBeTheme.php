@@ -23,7 +23,7 @@
         $aSettings = $this->addon->getConfig();
     
         if ($aSettings["logo"]) {
-            $aSettings["serverName"] = '<img src="/media/'.$aSettings["logo"].'">';
+            $aSettings["serverName"] = '<img src="'.rex_url::media($aSettings["logo"]).'">';
         }
 
         foreach ($aSettings as $sKey => $sVal) {
