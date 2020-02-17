@@ -291,7 +291,7 @@ body.rex-is-logged-out .navbar-brand img {
 }
 .rextree h4 a {
   color: #fff;
-  margin-left: -2000px;
+  margin-left: -20000px;
 }
 
 .rextree .rtpanel {
