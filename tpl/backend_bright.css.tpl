@@ -101,16 +101,30 @@ a {
 	padding-top: 0;
   }
 
+
+
 .nav-tabs > li > a {
   margin-right: 0;
-  border: none;
+  border-color: none !important;
+  border: none !important;
+  background-color: transparent !important;
 }
+
+.nav-tabs > li > a:hover {
+  background-color: white !important;
+  color: {{color}} !important;
+}
+
+.nav-tabs > li.active > a {
+  background-color: white !important;
+}  
 
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  background-color: {{color}};
+  background-color: {{color}} !important;
   z-index: 3;
+  color: white !important;
 }
 
 .breadcrumb {
