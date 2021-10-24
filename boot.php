@@ -1,4 +1,4 @@
-<?
+<?php
 $oBeTheme = new nvBeTheme;
 // debug mode, bei jedem aufruf wird die css-datei neu generiert
 // $oBeTheme->generateFiles();

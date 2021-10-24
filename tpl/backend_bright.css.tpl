@@ -363,7 +363,7 @@ color: #222d45;
 .panel-edit > .panel-heading {
   background-color: {{color}};
   border-color: {{color}};
-  border: 0;
+  border: 1px solid {{color}};
   color: #fff;
 }
 .rex-nav-meta .text-muted {
@@ -448,4 +448,59 @@ color: #222d45;
 	transition: none;
 	width: 0;
 	height: 0;
+}
+
+.gridblock .tab-content {
+  border: none;
+}
+
+.gridblock .tab-nav {
+  background-color:{{color}};
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.gridblock .column-settings,
+.gridblock .column-slices,
+.gridblock .column-input {
+  padding: 20px 0;
+}
+
+.gridblock-preview > div {
+  background: #5d6772;
+}
+
+.gridblock .tab-nav > li > a {
+  border-radius:0;
+  color: white;
+  padding: 10px;
+}
+
+.gridblock .tab-nav > li.active > a {
+  color:{{color}};
+}
+
+.gridblock .column-settings .optionstoggler:hover {
+  background:{{color}}
+}
+
+.gridblock a.btn-addgridmodule {
+  background: #efefef;
+  border-color: #efefef;
+  color:{{color}};
+}
+
+.gridblock a.btn-addgridmodule:hover {
+  background:{{color}} !important;
+  border-color:{{color}} !important;
+}
+
+.form-control.gridblock-moduleinfo {
+  background: white;
+  border: none;
+}
+
+.gridblock .checkbox.toggle label input:checked,
+.radio.toggle label input:checked {
+  background:{{color}}
 }
