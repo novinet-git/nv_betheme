@@ -253,7 +253,8 @@ a {
 }
 
 .navbar-brand img {
-  max-height: 50px;
+  height: 40px;
+  margin-top: 5px;
 }
 
 .panel {
