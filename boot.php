@@ -3,6 +3,9 @@ $oBeTheme = new nvBeTheme;
 // debug mode, bei jedem aufruf wird die css-datei neu generiert
 // $oBeTheme->generateFiles();
 
+if (file_exists($oBeTheme->addon->getAssetsPath("css/style.css"))) {
+    rex_view::addCssFile($oBeTheme->addon->getAssetsUrl("css/style.css"));
+}
 
 // Include backend assets
 if (rex::isBackend() && $oBeTheme->addon->getConfig("active")) {

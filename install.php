@@ -7,3 +7,5 @@ if (!$this->hasConfig()) {
             "active" => "1",
     ]);
 }
+$oBeTheme = new nvBeTheme;
+$oBeTheme->generateFiles();

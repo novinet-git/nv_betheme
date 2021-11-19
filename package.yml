@@ -1,7 +1,7 @@
 # Alle hier gesetzten Werte können über `$addon->getProperty($key)` abgefragt werden
 
 package: nv_betheme # Pflichtfeld
-version: '1.1.6' # Pflichtfeld
+version: '1.1.7' # Pflichtfeld
 author: novinet GmbH & Co KG
 supportpage: https://novinet.de
 
@@ -17,6 +17,7 @@ requires:
 
 page:
     title: translate:title
+    icon: novinet-icon-logo
     perm: admin
     subpages:
         settings: { title: translate:settings }

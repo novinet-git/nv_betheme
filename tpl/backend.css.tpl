@@ -270,6 +270,10 @@ body.rex-is-logged-out .navbar-brand img {
  border-color: {{color}} transparent transparent transparent;
 }
 
+.rex-is-logged-in .rex-nav-top .navbar, #rex-page-setup .rex-nav-top .navbar {
+  background-color: {{color}}
+}
+
 
 #rex-page-login .rex-nav-top {
   background-color: {{color}};
@@ -488,4 +492,14 @@ body.rex-is-logged-out .navbar-brand img {
 .gridblock .checkbox.toggle label input:checked,
 .radio.toggle label input:checked {
   background:{{color}}
+}
+
+.btn-clang:active, .btn-clang.active, .open>.btn-clang.dropdown-toggle {
+    background:{{color}} !important;
+    border-color:{{color}} !important;
+    color: white !important;
+}
+
+.btn-clang {
+      color:{{color}} !important;
 }
