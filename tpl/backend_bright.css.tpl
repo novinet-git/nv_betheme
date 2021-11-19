@@ -227,6 +227,8 @@ a {
 .mblock_wrapper > div {
   border: none;
   background: #fff;
+  box-shadow: none;
+  padding: 0 !important;
 }
 
 
@@ -291,8 +293,6 @@ body.rex-is-logged-out .navbar-brand img {
   padding-right: 25px;
 }
 
-.rex-nav-top .container-fluid .navbar-brand {
-}
 
 .rextree {
   background: white;
@@ -320,7 +320,7 @@ body.rex-is-logged-out .navbar-brand img {
 
 .jstree-anchor,
 .jstree-anchor:link,
-.jstree-anchor:visited {}
+.jstree-anchor:visited,
 .jstree-anchor:hover,
 .jstree-anchor:active {
   color: #222d45;
@@ -454,14 +454,29 @@ color: #222d45;
 	height: 0;
 }
 
+.gridblock .gridblock-block {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
 .gridblock .tab-content {
   border: none;
+  padding: 5px 20px 0 20px;
+}
+
+.tab-content .sortitem {
+  background: none;
 }
 
 .gridblock .tab-nav {
   background-color:{{color}};
   border: none;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.gridblock .tab-nav:after {
+    background-color: #fff;
+    height: 8px;
+    content: "";
+    width: 100%;
 }
 
 .gridblock .column-settings,
@@ -488,21 +503,29 @@ color: #222d45;
   background:{{color}}
 }
 
-.gridblock a.btn-addgridmodule {
+.gridblock a.btn-block.btn-addgridmodule {
   background: #efefef;
   border-color: #efefef;
   color:{{color}};
 }
 
-.gridblock a.btn-addgridmodule:hover {
+.gridblock a.btn-block.btn-addgridmodule:hover {
   background:{{color}} !important;
   border-color:{{color}} !important;
 }
 
 .form-control.gridblock-moduleinfo {
-  background: white;
+  background: #efefef;
+  font-weight: bold;
   border: none;
+  box-shadow: none;
 }
+
+.gridblock .column-slice-functions {
+  background: #efefef;
+  box-shadow: none;
+}
+
 
 .gridblock .checkbox.toggle label input:checked,
 .radio.toggle label input:checked {

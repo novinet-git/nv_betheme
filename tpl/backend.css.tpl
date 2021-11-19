@@ -225,7 +225,9 @@ a {
 .mblock_wrapper > div {
   border: none;
   background: #fff;
-}
+  box-shadow: none;
+  padding: 0 !important;
+  }
 
 
 
@@ -285,15 +287,14 @@ body.rex-is-logged-out .navbar-brand img {
   z-index: 3;
 }
 
-
-
-.rex-nav-top .container-fluid .navbar-brand {
+.rex-page-main-inner {
+  padding-left: 25px;
+  padding-right: 25px;
 }
-
 .rextree {
   background: #324050;
   border-left: 1px solid rgba(156, 165, 178, 0.3);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .rextree a > i {
@@ -473,21 +474,78 @@ body.rex-is-logged-out .navbar-brand img {
   background:{{color}}
 }
 
-.gridblock a.btn-addgridmodule {
+.gridblock .gridblock-block {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.gridblock .tab-content {
+  border: none;
+  padding: 5px 20px 0 20px;
+}
+
+.tab-content .sortitem {
+  background: none;
+}
+
+.gridblock .tab-nav {
+  background-color:{{color}};
+  border: none;
+}
+
+.gridblock .tab-nav:after {
+    background-color: #fff;
+    height: 8px;
+    content: "";
+    width: 100%;
+}
+
+.gridblock .column-settings,
+.gridblock .column-slices,
+.gridblock .column-input {
+  padding: 20px 0;
+}
+
+.gridblock-preview > div {
+  background: #5d6772;
+}
+
+.gridblock .tab-nav > li > a {
+  border-radius:0;
+  color: white;
+  padding: 10px;
+}
+
+.gridblock .tab-nav > li.active > a {
+  color:{{color}};
+}
+
+.gridblock .column-settings .optionstoggler:hover {
+  background:{{color}}
+}
+
+.gridblock a.btn-block.btn-addgridmodule {
   background: #efefef;
   border-color: #efefef;
   color:{{color}};
 }
 
-.gridblock a.btn-addgridmodule:hover {
+.gridblock a.btn-block.btn-addgridmodule:hover {
   background:{{color}} !important;
   border-color:{{color}} !important;
 }
 
 .form-control.gridblock-moduleinfo {
-  background: white;
+  background: #efefef;
+  font-weight: bold;
   border: none;
+  box-shadow: none;
 }
+
+.gridblock .column-slice-functions {
+  background: #efefef;
+  box-shadow: none;
+}
+
 
 .gridblock .checkbox.toggle label input:checked,
 .radio.toggle label input:checked {
