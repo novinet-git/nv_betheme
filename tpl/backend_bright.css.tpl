@@ -532,6 +532,22 @@ color: #222d45;
   background:{{color}}
 }
 
+.gridblockcontentsettings-form .nav-tabs { 
+  border: 0;
+  background-color: {{color}};
+  margin-bottom: 20px;
+}
+
+.gridblockcontentsettings-form .nav-tabs li > a {
+  color: white;
+}
+
+.gridblockcontentsettings-form .nav-tabs li > a:hover,
+.gridblockcontentsettings-form .nav-tabs li.active > a {
+  background-color: #efefef !important;
+  color: {{color}} !important;
+}
+
 .btn-clang:active, .btn-clang.active, .open>.btn-clang.dropdown-toggle {
     background:{{color}} !important;
     border-color:{{color}} !important;
@@ -540,4 +556,33 @@ color: #222d45;
 
 .btn-clang {
       color:{{color}} !important;
+}
+
+.nv-modulesettings {
+  border: 0;
+}
+
+.nv-modulesettings .btn.btn-abort,
+.nv-modulesettings .btn.btn-abort:hover,
+.nv-modulesettings .btn.btn-abort:active {
+  border: none;
+  background-color: #F5F5F5 !important;
+  padding: 10px 10px;
+  font-weight: bold;
+}
+.nv-modulesettings-form {
+  border: 1px solid #F5F5F5 !important;
+}
+.nv-modulesettings-form .nav-tabs {
+  background:{{color}} !important; 
+}
+
+.nv-modulesettings-form .nav-tabs > li > a {
+  color: white !important
+}
+
+.nv-modulesettings-form .nav-tabs > li.active > a,
+.nv-modulesettings-form .nav-tabs > li:hover > a {
+  background-color: #F5F5F5 !important;
+  color: {{color}} !important;
 }
