@@ -468,10 +468,17 @@ body.rex-is-logged-out .navbar-brand img {
     width: 100%;
 }
 
-.gridblock .column-settings,
+.gridblock .column-settings{
+  padding: 0px 0;
+}
+
 .gridblock .column-slices,
 .gridblock .column-input {
   padding: 20px 0;
+}
+
+.gridblock .hiddenOpt.gridcolumnoptions {
+  padding-top: 0;
 }
 
 .gridblock-preview > div {
@@ -537,8 +544,7 @@ body.rex-is-logged-out .navbar-brand img {
 }
 
 .gridblockcontentsettings-form {
-  box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
-  background-color: #efefef;
+  background-color: #F5F5F5;
 }
 
 .gridblockcontentsettings-form .nav-tabs { 
@@ -548,12 +554,12 @@ body.rex-is-logged-out .navbar-brand img {
 }
 
 .gridblockcontentsettings-form .nav-tabs li > a {
-  color: #efefef;
+  color: #F5F5F5;
 }
 
 .gridblockcontentsettings-form .nav-tabs li > a:hover,
 .gridblockcontentsettings-form .nav-tabs li.active > a {
-  background-color: #efefef !important;
+  background-color: #F5F5F5 !important;
   color: #5d6772 !important;
 }
 
@@ -563,7 +569,11 @@ body.rex-is-logged-out .navbar-brand img {
 
 .gridblockcontentsettings-form .tab-content {
   padding: 0 !important;
-  background-color: #efefef;
+  background-color: #F5F5F5;
+}
+
+.gridblocksettings-tab-icon-right {
+  color: white;
 }
 
 .btn-clang:active, .btn-clang.active, .open>.btn-clang.dropdown-toggle {
