@@ -454,6 +454,7 @@ body.rex-is-logged-out .navbar-brand img {
 
 .tab-content .sortitem {
   background: none;
+  box-shadow: none;
 }
 
 .gridblock .tab-nav {
@@ -572,8 +573,22 @@ body.rex-is-logged-out .navbar-brand img {
   background-color: #F5F5F5;
 }
 
-.gridblocksettings-tab-icon-right {
+.gridblockcontentsettings-tab-icon-right {
   color: white;
+}
+
+.gridblockcontentsettings-toggler,
+.gridblockcontentsettings-toggler:active,
+.gridblockcontentsettings-toggler:hover {
+  background-color: #5d6772 !important;
+  color: white !important;
+  border: 1px solid #5d6772;
+}
+
+.gridblockcontentsettings-options {
+  background-color: #F5F5F5 !important;
+  border: 0;
+  padding-top:20px;
 }
 
 .btn-clang:active, .btn-clang.active, .open>.btn-clang.dropdown-toggle {
@@ -602,15 +617,21 @@ body.rex-is-logged-out .navbar-brand img {
   border: 1px solid #F5F5F5 !important;
 }
 .nv-modulesettings-form .nav-tabs {
-  background:{{color}} !important; 
+  background-color: #5d6772 !important;
+  margin-bottom: 0;
 }
 
 .nv-modulesettings-form .nav-tabs > li > a {
-  color: white !important
+  color: #F5F5F5 !important
 }
 
 .nv-modulesettings-form .nav-tabs > li.active > a,
 .nv-modulesettings-form .nav-tabs > li:hover > a {
   background-color: #F5F5F5 !important;
-  color: {{color}} !important;
+  color: #5d6772 !important;
+}
+
+.nv-modulesettings-form .tab-content {
+  background-color: #F5F5F5;
+  padding: 20px;
 }
