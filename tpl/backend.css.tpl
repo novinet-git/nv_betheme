@@ -649,3 +649,9 @@ body.rex-is-logged-out .navbar-brand img {
   border: 0;
   padding-top:20px;
 }
+
+.nv-modulesettings .slider-handle {
+  background: none;
+  background-color: {{color}} !important;
+  box-shadow: none;
+}
