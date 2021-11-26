@@ -552,6 +552,7 @@ color: #222d45;
 
 .gridblockcontentsettings-form {
   box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+  background-color: #efefef;
 }
 
 .gridblockcontentsettings-form .nav-tabs { 
@@ -561,12 +562,12 @@ color: #222d45;
 }
 
 .gridblockcontentsettings-form .nav-tabs li > a {
-  color: white;
+  color: #efefef;
 }
 
 .gridblockcontentsettings-form .nav-tabs li > a:hover,
 .gridblockcontentsettings-form .nav-tabs li.active > a {
-  background-color: #fff !important;
+  background-color: #efefef !important;
   color: #5d6772 !important;
 }
 
@@ -576,6 +577,7 @@ color: #222d45;
 
 .gridblockcontentsettings-form .tab-content {
   padding: 0 !important;
+  background-color: #efefef;
 }
 
 .btn-clang:active, .btn-clang.active, .open>.btn-clang.dropdown-toggle {
