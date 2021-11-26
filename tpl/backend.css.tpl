@@ -523,15 +523,30 @@ body.rex-is-logged-out .navbar-brand img {
   background:{{color}}
 }
 
-.gridblock a.btn-block.btn-addgridmodule {
+.gridblock a.btn-block.btn-choosegridmodul {
   background: #efefef;
   border-color: #efefef;
   color:{{color}};
 }
 
-.gridblock a.btn-block.btn-addgridmodule:hover {
+.gridblock a.btn-block.btn-choosegridmodul:hover {
   background:{{color}} !important;
   border-color:{{color}} !important;
+}
+
+.gridblock .column-slice-sorter a.btn-addgridmodule {
+  color: #fff;
+  background-color: #6f9a15;
+}
+
+.gridblock .column-slice-sorter a.btn-addgridmodule:hover {
+  background-color: #45986c;
+}
+
+.gridblock .slider-handle {
+  background: none;
+  background-color: {{color}} !important;
+  box-shadow: none;
 }
 
 .form-control.gridblock-moduleinfo {
