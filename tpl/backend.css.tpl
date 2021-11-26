@@ -440,47 +440,16 @@ body.rex-is-logged-out .navbar-brand img {
 	height: 0;
 }
 
-.gridblock .tab-content {
-  border: none;
-}
-
-.gridblock .tab-nav {
-  background-color:{{color}};
-  border: none;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-}
-
-.gridblock .column-settings,
-.gridblock .column-slices,
-.gridblock .column-input {
-  padding: 20px 0;
-}
-
-.gridblock-preview > div {
-  background: #5d6772;
-}
-
-.gridblock .tab-nav > li > a {
-  border-radius:0;
-  color: white;
-  padding: 10px;
-}
-
-.gridblock .tab-nav > li.active > a {
-  color:{{color}};
-}
-
-.gridblock .column-settings .optionstoggler:hover {
-  background:{{color}}
-}
-
 .gridblock .gridblock-block {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
+.gridblock .gridblock-block > .tab-content {
+    padding: 20px;
+}
+
 .gridblock .tab-content {
   border: none;
-  padding: 5px 20px 0 20px;
 }
 
 .tab-content .sortitem {
@@ -567,10 +536,14 @@ body.rex-is-logged-out .navbar-brand img {
   background:{{color}}
 }
 
+.gridblockcontentsettings-form {
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+}
+
 .gridblockcontentsettings-form .nav-tabs { 
   border: 0;
-  background-color: {{color}};
-  margin-bottom: 20px;
+  background-color: #5d6772;
+  margin-bottom: 0px;
 }
 
 .gridblockcontentsettings-form .nav-tabs li > a {
@@ -579,8 +552,16 @@ body.rex-is-logged-out .navbar-brand img {
 
 .gridblockcontentsettings-form .nav-tabs li > a:hover,
 .gridblockcontentsettings-form .nav-tabs li.active > a {
-  background-color: #efefef !important;
-  color: {{color}} !important;
+  background-color: #fff !important;
+  color: #5d6772 !important;
+}
+
+.gridblockcontentsettings-form .rex-form-group.active {
+  padding: 20px 20px;
+}
+
+.gridblockcontentsettings-form .tab-content {
+  padding: 0 !important;
 }
 
 .btn-clang:active, .btn-clang.active, .open>.btn-clang.dropdown-toggle {

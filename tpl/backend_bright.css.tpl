@@ -458,9 +458,12 @@ color: #222d45;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
+.gridblock .gridblock-block > .tab-content {
+    padding: 20px;
+}
+
 .gridblock .tab-content {
   border: none;
-  padding: 5px 20px 0 20px;
 }
 
 .tab-content .sortitem {
@@ -547,10 +550,14 @@ color: #222d45;
   background:{{color}}
 }
 
+.gridblockcontentsettings-form {
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+}
+
 .gridblockcontentsettings-form .nav-tabs { 
   border: 0;
-  background-color: {{color}};
-  margin-bottom: 20px;
+  background-color: #5d6772;
+  margin-bottom: 0px;
 }
 
 .gridblockcontentsettings-form .nav-tabs li > a {
@@ -559,8 +566,16 @@ color: #222d45;
 
 .gridblockcontentsettings-form .nav-tabs li > a:hover,
 .gridblockcontentsettings-form .nav-tabs li.active > a {
-  background-color: #efefef !important;
-  color: {{color}} !important;
+  background-color: #fff !important;
+  color: #5d6772 !important;
+}
+
+.gridblockcontentsettings-form .rex-form-group.active {
+  padding: 20px 20px;
+}
+
+.gridblockcontentsettings-form .tab-content {
+  padding: 0 !important;
 }
 
 .btn-clang:active, .btn-clang.active, .open>.btn-clang.dropdown-toggle {
