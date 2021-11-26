@@ -649,3 +649,17 @@ color: #222d45;
   background-color: #F5F5F5;
   padding: 20px;
 }
+
+.nv-modulesettings-backend-toggler,
+.nv-modulesettings-backend-toggler:active,
+.nv-modulesettings-backend-toggler:hover {
+  background-color: #5d6772 !important;
+  color: white !important;
+  border: 1px solid #5d6772;
+}
+
+.nv-modulesettings-backend-options {
+  background-color: #F5F5F5 !important;
+  border: 0;
+  padding-top:20px;
+}
