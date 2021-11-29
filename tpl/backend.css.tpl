@@ -440,11 +440,11 @@ body.rex-is-logged-out .navbar-brand img {
 	height: 0;
 }
 
-.gridblock .gridblock-block {
+.gridblock .gridblock-bottom {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-.gridblock .gridblock-block > .tab-content {
+.gridblock .gridblock-bottom > .tab-content {
     padding: 20px;
 }
 
