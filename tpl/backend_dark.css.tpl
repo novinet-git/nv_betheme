@@ -1,0 +1,28 @@
+.rextree {
+  background: #324050;
+}
+
+.rextree a > i {
+  color: #fff;
+}
+
+.rextree .rtpanel {
+  color: white;
+}
+
+.jstree-anchor,
+.jstree-anchor:link,
+.jstree-anchor:visited,
+.jstree-anchor:hover,
+.jstree-anchor:active {
+  color: #fff;
+}
+
+.rex-nav-main li > a:hover,
+.rex-nav-main li > a:focus {
+  color: #white;
+  }
+
+.rextree-left .rextree .jstree-wholerow-hovered {
+  background: #283542;
+}

@@ -101,6 +101,8 @@ a {
 	padding-top: 0;
   }
 
+
+
 .nav-tabs > li > a {
   margin-right: 0;
   border-color: none !important;
@@ -227,7 +229,7 @@ a {
   background: #fff;
   box-shadow: none;
   padding: 0 !important;
-  }
+}
 
 
 
@@ -276,7 +278,6 @@ body.rex-is-logged-out .navbar-brand img {
   background-color: {{color}}
 }
 
-
 #rex-page-login .rex-nav-top {
   background-color: {{color}};
   border-color: {{color}};
@@ -291,14 +292,11 @@ body.rex-is-logged-out .navbar-brand img {
   padding-left: 25px;
   padding-right: 25px;
 }
+
+
 .rextree {
-  background: #324050;
   border-left: 1px solid rgba(156, 165, 178, 0.3);
   box-shadow: 5px 0 5px 0 rgba(0, 0, 0, 0.1);
-}
-
-.rextree a > i {
-  color: #fff;
 }
 
 .rextree .startarticle > a > i {
@@ -312,15 +310,6 @@ body.rex-is-logged-out .navbar-brand img {
 .rextree .rtpanel {
   border: none;
   background-color: transparent;
-  color: white;
-}
-
-.jstree-anchor,
-.jstree-anchor:link,
-.jstree-anchor:visited,
-.jstree-anchor:hover,
-.jstree-anchor:active {
-  color: #fff;
 }
 
 .rex-nav-main {
@@ -329,11 +318,7 @@ body.rex-is-logged-out .navbar-brand img {
 
 .rex-nav-main li > a:hover,
 .rex-nav-main li > a:focus {
-  color: #fff;
-}
-
-.rextree-left .rextree .jstree-wholerow-hovered {
-  background: #283542;
+  color: white;
 }
 
 .rex-slice-select > .dropdown > .btn-default {
@@ -444,7 +429,7 @@ body.rex-is-logged-out .navbar-brand img {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-.gridblock .gridblock-bottom > .tab-content {
+.gridblock .gridblock-bottom > .tab-content > .tab-pane {
     padding: 20px;
 }
 
@@ -462,13 +447,6 @@ body.rex-is-logged-out .navbar-brand img {
   border: none;
 }
 
-.gridblock .tab-nav:after {
-    background-color: #fff;
-    height: 8px;
-    content: "";
-    width: 100%;
-}
-
 .gridblock .column-settings{
   padding: 0px 0;
 }
@@ -476,6 +454,10 @@ body.rex-is-logged-out .navbar-brand img {
 .gridblock .column-slices,
 .gridblock .column-input {
   padding: 20px 0;
+}
+
+.gridblock .column-input {
+  box-shadow: none;
 }
 
 .gridblock .hiddenOpt.gridcolumnoptions {
@@ -654,4 +636,24 @@ body.rex-is-logged-out .navbar-brand img {
   background: none;
   background-color: {{color}} !important;
   box-shadow: none;
+}
+
+.bootstrap-select>.dropdown-toggle {
+  background-color: #f3f6fb;
+  border: 1px solid #c1c9d4;
+}
+
+.control-label {
+  text-align: left !important;
+  width: 100%;
+  padding-top: 0 !important
+}
+
+.control-label > label {
+  display: block;
+  padding-top: 0;
+}
+
+.col-sm-10 {
+  width: 100% !important;
 }

@@ -17,7 +17,11 @@
 
     public function generateFiles()
     {
-        $sFileCssData = file_get_contents($this->addon->getPath("tpl/backend".$this->addon->getConfig("style").".css.tpl"));
+        $sFileCssData = file_get_contents($this->addon->getPath("tpl/backend.css.tpl"));
+        if ($this->addon->getConfig("style")) {
+            $sFileCssData .= file_get_contents($this->addon->getPath("tpl/backend_".$this->addon->getConfig("style").".css.tpl"));
+        }
+
         $sFileJsData = file_get_contents($this->addon->getPath("tpl/backend.js.tpl"));
 
         $aSettings = $this->addon->getConfig();
