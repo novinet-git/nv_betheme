@@ -663,6 +663,9 @@ body.rex-is-logged-out .navbar-brand img {
 }
 
 .gridblockcontentsettings-group {
+  
+  margin-bottom: 20px;
+
   .gridblockcontentsettings-heading {
     padding-bottom: 10px;
     border-bottom: 1px solid #c0c0c0;
@@ -672,25 +675,22 @@ body.rex-is-logged-out .navbar-brand img {
       font-weight: bold;
       font-size: 1.5rem;
       padding: 0;
-
-      &.collapsed,
-      &.collapsed:after {
-        color: #324050;
-      }
+      text-decoration: none;
 
       &:hover,
+      &:hover:after,
       &:focus,
       &:after,
-      &.collapsed:hover,
-      &.collapsed:hover:after {
-        text-decoration: none;
+      &[aria-expanded="true"],
+      &[aria-expanded="true"]:after,
+      &[aria-expanded="false"]:hover,
+      &[aria-expanded="false"]:hover:after {
         color: #324050;
       }
     }
   }
   .gridblockcontentsettings-body {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0;
     border-bottom: 1px solid #c0c0c0;
   }
 }
