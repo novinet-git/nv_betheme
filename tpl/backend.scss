@@ -98,6 +98,10 @@ body {
 
 a {
   color: $color;
+  &:hover,
+  &:focus {
+    color: $color;
+  }
 }
 
 .bg-primary {
@@ -241,6 +245,13 @@ a {
 
 .btn {
   border-radius: 0;
+}
+
+.btn.gridblock-iscopied,
+.btn-copy[data-bloecks-cutncopy-iscopied="true"],
+.btn-cut[data-bloecks-cutncopy-iscopied="true"] {
+  background-color: $color !important;
+  color: #fff !important;
 }
 
 .btn-save,
@@ -663,7 +674,6 @@ body.rex-is-logged-out .navbar-brand img {
 }
 
 .gridblockcontentsettings-group {
-  
   margin-bottom: 20px;
 
   .gridblockcontentsettings-heading {
@@ -876,4 +886,37 @@ body.rex-is-logged-out .navbar-brand img {
 .form-control[readonly] {
   background-color: #fff;
   cursor: not-allowed;
+}
+
+.btn.show-module-preview {
+  background-color: $brightcolor;
+  border-color: $brightcolor;
+  color: $color;
+}
+
+#module-preview {
+  .nv-modal-header {
+    background-color: $color;
+
+    #module-preview-search {
+      color: $color;
+
+      background: #efefef;
+      &::placeholder {
+        color: $color;
+      }
+
+      &:focus {
+        border-color: white;
+        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px $color;
+      }
+    }
+  }
+
+  .module-list {
+    .nv-category {
+      background: $brightcolor;
+      color: $color;
+    }
+  }
 }
