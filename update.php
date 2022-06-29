@@ -1,3 +1,2 @@
 <?php
-$oBeTheme = new nvBeTheme;
-$oBeTheme->generateFiles();
+$this->setConfig('generatefiles',true);

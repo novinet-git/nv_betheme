@@ -3,6 +3,12 @@ if (!$this->getConfig("active")) {
     return;
 }
 
+if ($this->getConfig('generatefiles')) {
+    $oBeTheme = new nvBeTheme;
+    $oBeTheme->generateFiles();
+    $this->removeConfig('generatefiles');
+}
+
 $oBeTheme = new nvBeTheme;
 
 // debug mode, bei jedem aufruf wird die css-datei neu generiert
