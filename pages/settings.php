@@ -7,7 +7,7 @@ $form = rex_config_form::factory($oBeTheme->addon->name);
 
 
 $field = $form->addSelectField('style',$value = null,['class'=>'form-control selectpicker']);
-$field->setLabel("Select");
+$field->setLabel($this->i18n('nv_betheme_navigation'));
 $select = $field->getSelect();
 $select->addOption('Dunkle Navigation', 'dark');
 $select->addOption('Helle Navigation',"light");
@@ -21,6 +21,29 @@ $field->setLabel($this->i18n('nv_betheme_logo'));
 $field = $form->addCheckboxField('active');
 $field->addOption('','1');
 $field->setLabel($this->i18n('nv_betheme_active'));
+
+
+
+
+
+$field = $form->addCheckboxField('login_branding_active');
+$field->addOption('','1');
+$field->setLabel($this->i18n('nv_betheme_login_branding_active'));
+
+$field = $form->addMediaField('login_branding_image', null, ["class" => "form-control"]);
+$field->setLabel($this->i18n('nv_betheme_login_branding_image'));
+
+
+$field = $form->addCheckboxField('login_background_active');
+$field->addOption('','1');
+$field->setLabel($this->i18n('nv_betheme_login_background_active'));
+
+$field = $form->addMediaField('login_background_image', null, ["class" => "form-control"]);
+$field->setLabel($this->i18n('nv_betheme_login_background_image'));
+
+$field = $form->addInputField('text', 'login_background_credits', null, ["class" => "form-control"]);
+$field->setLabel($this->i18n('nv_betheme_login_background_credits'));
+
 
 $fragment = new rex_fragment();
 $fragment->setVar('class', 'edit', false);
