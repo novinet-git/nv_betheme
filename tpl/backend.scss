@@ -367,8 +367,24 @@ body.rex-is-logged-out .navbar-brand img {
   border: 0;
 }
 
-.rex-page-nav .navbar-default .navbar-nav > li > a {
-  color: $color;
+.rex-page-nav .navbar-default .navbar-nav > li {
+  > a {
+    color: $color;
+    margin: 9px 5px;
+    padding: 3px 10px;
+    background-color: white;
+
+    &:hover {
+      background-color: $color !important;
+      color: white !important;
+    }
+  }
+  &.active {
+    > a {
+      background-color: $color !important;
+      color: white !important;
+    }
+  }
 }
 
 .nv-nav-wrapper {
