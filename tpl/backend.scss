@@ -913,10 +913,63 @@ body.rex-is-logged-out .navbar-brand img {
     }
   }
 
+  #nv-collections-tabs {
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+    background-color: $color;
+    li {
+      a {
+        transition: all 0.3s ease-in-out;
+
+        color: white;
+        &:hover,
+        &:active {
+          color: $color;
+          background-color: #f8f9fa !important;
+        }
+      }
+      &.active {
+        a,
+        a:hover,
+        a.active {
+          color: $color;
+          background-color: #f8f9fa !important;
+        }
+      }
+    }
+  }
+
   .module-list {
     .nv-category {
       background: $brightcolor;
       color: $color;
+      box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+      margin-top: 0;
+    }
+
+    .card {
+      box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+      transition: all 0.3s ease-in-out;
+      .module {
+        transition: all 0.3s ease-in-out;
+        .description {
+          transition: all 0.3s ease-in-out;
+        }
+      }
+      &:hover,
+      &:active {
+        .module {
+          background-color: $color;
+          color: white;
+          .description {
+            color: white;
+          }
+        }
+      }
+    }
+
+    .nv-copy {
+      box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+      margin-top: 0 !important;
     }
   }
 }
