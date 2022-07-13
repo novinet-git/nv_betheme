@@ -739,10 +739,12 @@ body.rex-is-logged-out .navbar-brand img {
   padding-top: 20px;
 }
 
-.gridblockcontentsettings-group {
+.gridblockcontentsettings-group,
+.nvmodulesettings-group {
   margin-bottom: 20px;
 
-  .gridblockcontentsettings-heading {
+  .gridblockcontentsettings-heading,
+  .nvmodulesettings-heading {
     padding-bottom: 10px;
     border-bottom: 1px solid #c0c0c0;
 
@@ -765,7 +767,8 @@ body.rex-is-logged-out .navbar-brand img {
       }
     }
   }
-  .gridblockcontentsettings-body {
+  .gridblockcontentsettings-body,
+  .nvmodulesettings-body {
     padding: 20px 0;
     border-bottom: 1px solid #c0c0c0;
   }
@@ -1004,7 +1007,7 @@ body.rex-is-logged-out .navbar-brand img {
     }
   }
 
-  #nv-collections-tabs {
+  #nv-modulepreview-tabs {
     box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
     background-color: $color;
     border-radius: 4px;
