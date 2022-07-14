@@ -22,11 +22,20 @@ if (file_exists($oBeTheme->addon->getAssetsPath("css/style.css"))) {
 if (rex::isBackend() && $oBeTheme->addon->getConfig("active")) {
     rex_extension::register('PACKAGES_INCLUDED', 'nvBeTheme_add_backend_assets', rex_extension::LATE);
 
-    rex_extension::register('PACKAGES_INCLUDED', static function (rex_extension_point $ep) {
-        rex::setProperty('theme', 'light');
-        // CKE5 fix   
-        rex_view::setJsProperty('cke5theme', 'light');
-    }, rex_extension::EARLY);
+    rex_extension::register('OUTPUT_FILTER', static function($ep) {
+        
+        $sSubject = $ep->getSubject();
+        $sSubject = str_replace('<div class="checkbox','<div class="checkbox toggle',$sSubject);
+        $sSubject = str_replace('<div class="radio','<div class="radio toggle switch',$sSubject);
+        $ep->setSubject($sSubject);
+
+    }, rex_extension::LATE);
+
+
+
+
+
+
 }
 
 
@@ -46,6 +55,10 @@ function nvBeTheme_add_backend_assets(rex_extension_point $ep)
     if (file_exists($oBeTheme->addon->getAssetsPath("backend.js"))) {
         rex_view::addJsFile($oBeTheme->addon->getAssetsUrl("backend.js"));
     }
+
+    rex::setProperty('theme', 'light');
+    // CKE5 fix   
+    rex_view::setJsProperty('cke5theme', 'light');
 }
 
 if (rex::isBackend()) {
