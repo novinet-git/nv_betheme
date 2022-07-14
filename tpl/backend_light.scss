@@ -32,7 +32,8 @@
 
 .rex-nav-main li > a:hover,
 .rex-nav-main li > a:focus {
-  background-color: $color;
+  background-color: $brightcolor;
+  color: $color;
 }
 
 .rextree-left .rextree .jstree-wholerow-hovered,

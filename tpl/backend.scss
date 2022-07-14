@@ -144,14 +144,15 @@ a {
 .nav-pills > li.active > a,
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
-  background-color: $color !important;
+  background-color: $brightcolor !important;
   z-index: 3;
-  color: white !important;
+  color: $color !important;
 }
 
 .breadcrumb {
   border: none;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  //box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ebf0;
   border-radius: 4px;
 }
 
@@ -391,7 +392,7 @@ body.rex-is-logged-out .navbar-brand img {
 }
 
 .rex-page-nav .nav-tabs {
-  background-color: $color;
+  background-color: $brightcolor;
   border: none;
   border-radius: 4px;
 }
@@ -406,21 +407,22 @@ body.rex-is-logged-out .navbar-brand img {
 
 .rex-page-nav .navbar-default .navbar-nav > li {
   > a {
-    color: $color;
+    color: #5D6772;
     margin: 9px 5px;
     padding: 3px 10px;
+    font-weight: bold;
     background-color: white;
     border-radius: 4px;
 
     &:hover {
-      background-color: $color !important;
-      color: white !important;
+      background-color: $brightcolor !important;
+      color: $color !important;
     }
   }
   &.active {
     > a {
-      background-color: $color !important;
-      color: white !important;
+      background-color: $brightcolor !important;
+      color: $color !important;
     }
   }
 }
@@ -440,9 +442,10 @@ body.rex-is-logged-out .navbar-brand img {
 
 .rex-page-nav .nav-tabs > li > a:not(.btn) {
   border: 0;
+  font-weight: bold;
   background: none;
-  color: white;
   padding-bottom: 10px;
+  color: #5D6772;
 }
 
 .rex-page-nav .nav-tabs > li > a:not(.btn):hover {
@@ -530,6 +533,7 @@ body.rex-is-logged-out .navbar-brand img {
 .gridblock .tab-nav {
   background-color: $color;
   border: none;
+  font-weight: bold;
   border-radius: 4px 4px 0 0;
 }
 
@@ -652,7 +656,7 @@ body.rex-is-logged-out .navbar-brand img {
             }
 
             .nav-tabs {
-              background: #5d6772;
+              background: $brightcolor;
 
               > li {
                 a {
@@ -777,9 +781,9 @@ body.rex-is-logged-out .navbar-brand img {
 .btn-clang:active,
 .btn-clang.active,
 .open > .btn-clang.dropdown-toggle {
-  background: $color !important;
-  border-color: $color !important;
-  color: white !important;
+  background: $brightcolor !important;
+  color: $color !important;
+  border-color: #e9ebf0
 }
 
 .btn-clang {
@@ -936,7 +940,7 @@ body.rex-is-logged-out .navbar-brand img {
 }
 
 .rex-slice .panel-body .mform .mform-tabs .nav-tabs {
-  background: #5d6772;
+  background: $brightcolor;
 }
 
 .rex-slice .panel-body .mform .mform-tabs .nav-tabs > li a {
@@ -1157,4 +1161,18 @@ body.rex-is-logged-out .navbar-brand img {
         opacity: 0;
         transform: scale(2.5);
     }
+}
+
+.rex-has-icon.active a .novinet-icon-logo,
+a:hover .novinet-icon-logo {
+    //filter: grayscale(100%) brightness(300%);
+    filter: opacity(0.4) drop-shadow(0 0 0 $color);
+}
+
+.rex-page-section {
+  .panel-edit {
+    .panel-body {
+      padding-bottom: 10px;
+    }
+  }
 }
