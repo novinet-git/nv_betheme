@@ -4,6 +4,9 @@
 Changelog
 ---------
 
+<b>Version 1.10.1</b>
+- Akzentfarben unaufdringlicher gestaltet
+
 <b>Version 1.10.0</b>
 - Akzentfarben unaufdringlicher gestaltet
 

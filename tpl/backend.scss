@@ -407,7 +407,7 @@ body.rex-is-logged-out .navbar-brand img {
 
 .rex-page-nav .navbar-default .navbar-nav > li {
   > a {
-    color: #5D6772;
+    color: #324050;
     margin: 9px 5px;
     padding: 3px 10px;
     font-weight: bold;
@@ -445,7 +445,7 @@ body.rex-is-logged-out .navbar-brand img {
   font-weight: bold;
   background: none;
   padding-bottom: 10px;
-  color: #5D6772;
+  color: $color;
 }
 
 .rex-page-nav .nav-tabs > li > a:not(.btn):hover {
@@ -555,7 +555,7 @@ body.rex-is-logged-out .navbar-brand img {
 }
 
 .gridblock-preview > div {
-  background: #5d6772;
+  background: #324050;
 }
 
 .gridblock .tab-nav > li > a {
@@ -663,7 +663,7 @@ body.rex-is-logged-out .navbar-brand img {
                   &:not(.btn) {
                     font-weight: bold;
                     &:hover {
-                      color: #324050 !important;
+                      color: $color !important;
                     }
                   }
                 }
@@ -672,7 +672,7 @@ body.rex-is-logged-out .navbar-brand img {
                   > a {
                     &:not(.btn),
                     &:hot(.btn):hover {
-                      color: #324050 !important;
+                      color: $color !important;
                     }
                   }
                 }
@@ -701,7 +701,7 @@ body.rex-is-logged-out .navbar-brand img {
 
 .gridblockcontentsettings-form .nav-tabs {
   border: 0;
-  background-color: #5d6772;
+  background-color: #324050;
   margin-bottom: 0px;
 }
 
@@ -732,9 +732,9 @@ body.rex-is-logged-out .navbar-brand img {
 .gridblockcontentsettings-toggler,
 .gridblockcontentsettings-toggler:active,
 .gridblockcontentsettings-toggler:hover {
-  background-color: #5d6772 !important;
+  background-color: #324050 !important;
   color: white !important;
-  border: 1px solid #5d6772;
+  border: 1px solid #324050;
 }
 
 .gridblockcontentsettings-options {
@@ -818,7 +818,7 @@ body.rex-is-logged-out .navbar-brand img {
   padding-top: 5px;
 }
 .nv-modulesettings-form .nav-tabs {
-  background-color: #5d6772 !important;
+  background-color: #324050 !important;
   margin-bottom: 0;
 }
 
@@ -841,9 +841,9 @@ body.rex-is-logged-out .navbar-brand img {
 .nv-modulesettings-backend-toggler,
 .nv-modulesettings-backend-toggler:active,
 .nv-modulesettings-backend-toggler:hover {
-  background-color: #5d6772 !important;
+  background-color: #324050 !important;
   color: white !important;
-  border: 1px solid #5d6772;
+  border: 1px solid #324050;
 }
 
 .nv-modulesettings-backend-options {
@@ -950,7 +950,7 @@ body.rex-is-logged-out .navbar-brand img {
 .rex-slice .panel-body .mform .mform-tabs .nav-tabs > li.active > a:not(.btn),
 .rex-slice .panel-body .mform .mform-tabs .nav-tabs > li.active > a:not(.btn):hover,
 .rex-slice .panel-body .mform .mform-tabs .nav-tabs > li > a:not(.btn):hover {
-  color: #324050 !important;
+  color: $color !important;
 }
 
 .form-control {
