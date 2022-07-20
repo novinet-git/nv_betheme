@@ -3,6 +3,9 @@
 
 Changelog
 ---------
+<b>Version 1.12.0</b>
+- Navigation (rex-main) angepasst
+
 <b>Version 1.11.0</b>
 - Navigation (rex-main) angepasst
 
