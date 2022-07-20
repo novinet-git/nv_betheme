@@ -207,8 +207,8 @@ a {
   line-height: 1.4667;
   .panel-title {
     font-weight: bold;
-  line-height: 1.4667;
-  font-size: 15px;
+    line-height: 1.4667;
+    font-size: 15px;
   }
 }
 
@@ -356,6 +356,51 @@ body.rex-is-logged-out .navbar-brand img {
 
 .rex-nav-main {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  li {
+    transition: all 0.3s ease-in-out;
+    & > a {
+      padding-left: 40px;
+
+      .novinet-icon-logo {
+        filter: none !important;
+        background-image: url(images/novinet-signet_black.png);
+      }
+    }
+    &.rex-has-icon {
+      & > a {
+        i {
+          background-color: #e4e6eb;
+          padding: 10px;
+          border-radius: 50%;
+          margin-left: -28px;
+          margin-right: 3px;
+          background-size: 20px 20px;
+          width: 36px !important;
+          height: 36px !important;
+          text-align: center;
+          background-position: center center;
+        }
+      }
+    }
+    &.active,
+    &:hover {
+      i {
+        background-color: $color !important;
+        color: white;
+      }
+      .novinet-icon-logo {
+        background-image: url(images/novinet-signet_white.png);
+      }
+    }
+  }
+}
+
+.rex-has-icon.active a .novinet-icon-logo,
+a:hover .novinet-icon-logo {
+  //filter: grayscale(100%) brightness(300%);
+  //filter: opacity(0.4) drop-shadow(0 0 0 $color);
+  color: white;
+  background-color: $color;
 }
 
 .rex-nav-main li > a:hover,
@@ -783,12 +828,12 @@ body.rex-is-logged-out .navbar-brand img {
 .open > .btn-clang.dropdown-toggle {
   background: $brightcolor !important;
   color: $color !important;
-  border-color: #e9ebf0
+  border-color: #e9ebf0;
 }
 
 .btn-clang {
   color: $color !important;
-  border-color: #e9ebf0
+  border-color: #e9ebf0;
 }
 
 .nv-modulesettings {
@@ -975,7 +1020,7 @@ body.rex-is-logged-out .navbar-brand img {
 }
 
 .btn-group {
-  >.btn {
+  > .btn {
     &:first-child:not(:last-child):not(.dropdown-toggle) {
       border-radius: 4px 0 0 4px !important;
     }
@@ -986,7 +1031,6 @@ body.rex-is-logged-out .navbar-brand img {
 }
 
 #module-preview {
-  
   .container {
     &:last-of-type {
       border-radius: 0 0 4px 4px;
@@ -1041,7 +1085,6 @@ body.rex-is-logged-out .navbar-brand img {
   }
 
   .module-list {
-
     .nv-category {
       background: $brightcolor;
       color: $color;
@@ -1056,8 +1099,8 @@ body.rex-is-logged-out .navbar-brand img {
       border-radius: 4px;
 
       .module {
-      border-radius: 4px;
-      transition: all 0.3s ease-in-out;
+        border-radius: 4px;
+        transition: all 0.3s ease-in-out;
         .description {
           transition: all 0.3s ease-in-out;
         }
@@ -1082,91 +1125,93 @@ body.rex-is-logged-out .navbar-brand img {
   }
 }
 
-.btn-default, .btn-abort, .btn-back, .btn-clang, .btn-move, .btn-popup, .btn-reset, .btn-search, .btn-copy, .btn-cut {
+.btn-default,
+.btn-abort,
+.btn-back,
+.btn-clang,
+.btn-move,
+.btn-popup,
+.btn-reset,
+.btn-search,
+.btn-copy,
+.btn-cut {
   border-color: #e9ebf0;
 }
 
-
 .checkbox.toggle label input,
 .radio.toggle label input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    width: 3em;
-    height: 1.5em;
-    background: #ddd;
-    vertical-align: middle;
-    border-radius: 1.6em;
-    position: relative;
-    outline: 0;
-    margin-top: -3px;
-    margin-right: 10px;
-    cursor: pointer;
-    transition: background 0.1s ease-in-out;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 3em;
+  height: 1.5em;
+  background: #ddd;
+  vertical-align: middle;
+  border-radius: 1.6em;
+  position: relative;
+  outline: 0;
+  margin-top: -3px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background 0.1s ease-in-out;
 }
 
 .checkbox.toggle label input::after,
 .radio.toggle label input::after,
 .radio.switch label input::before {
-    content: '';
-    width: 1.5em;
-    height: 1.5em;
-    background: white;
-    position: absolute;
-    border-radius: 1.2em;
-    transform: scale(0.7);
-    left: 0;
-    box-shadow: 0 1px rgba(0, 0, 0, 0.5);
-    transition: left 0.1s ease-in-out;
+  content: "";
+  width: 1.5em;
+  height: 1.5em;
+  background: white;
+  position: absolute;
+  border-radius: 1.2em;
+  transform: scale(0.7);
+  left: 0;
+  box-shadow: 0 1px rgba(0, 0, 0, 0.5);
+  transition: left 0.1s ease-in-out;
 }
 
 .checkbox.toggle label input:checked,
 .radio.toggle label input:checked {
-    background: $color;
+  background: $color;
 }
 
 .checkbox.toggle label input:checked::after {
-    left: 1.5em;
+  left: 1.5em;
 }
 
 .radio.switch label {
-    margin-right: 1.5em;
+  margin-right: 1.5em;
 }
 
 .radio.switch label input {
-    width: 1.5em;
-    margin-right: 5px;
+  width: 1.5em;
+  margin-right: 5px;
 }
 
 .radio.switch label input:checked::after {
-    transform: scale(0.5);
+  transform: scale(0.5);
 }
 
 .radio.switch label input::before {
-    background: $color;
-    opacity: 0;
-    box-shadow: none;
+  background: $color;
+  opacity: 0;
+  box-shadow: none;
 }
 
 .radio.switch label input:checked::before {
-    animation: radioswitcheffect 0.65s;
+  animation: radioswitcheffect 0.65s;
 }
 
 @keyframes radioswitcheffect {
-    0% {
-        opacity: 0.75;
-    }
+  0% {
+    opacity: 0.75;
+  }
 
-    100% {
-        opacity: 0;
-        transform: scale(2.5);
-    }
-}
-
-.rex-has-icon.active a .novinet-icon-logo,
-a:hover .novinet-icon-logo {
-    //filter: grayscale(100%) brightness(300%);
-    filter: opacity(0.4) drop-shadow(0 0 0 $color);
+  100% {
+    opacity: 0;
+    transform: scale(2.5);
+  }
 }
 
 .rex-page-section {

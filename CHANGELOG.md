@@ -3,6 +3,8 @@
 
 Changelog
 ---------
+<b>Version 1.11.0</b>
+- Navigation (rex-main) angepasst
 
 <b>Version 1.10.1</b>
 - Akzentfarben unaufdringlicher gestaltet
