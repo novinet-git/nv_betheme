@@ -3,6 +3,9 @@
 
 Changelog
 ---------
+<b>Version 1.13.0</b>
+- Ausgabe für MForm / MBlock angepasst
+
 <b>Version 1.12.0</b>
 - Navigation (rex-main) angepasst
 

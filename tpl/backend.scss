@@ -951,7 +951,8 @@ a:hover .novinet-icon-logo {
 }
 
 .mblock_wrapper span.removeadded {
-  top: 6px;
+  top: 12px;
+  right: 35px;
 }
 
 .rex-online {
@@ -1218,6 +1219,30 @@ a:hover .novinet-icon-logo {
   .panel-edit {
     .panel-body {
       padding-bottom: 10px;
+    }
+  }
+}
+
+.mform {
+  &.form-horizontal {
+    .collapse-group {
+      .btn-white {
+        font-weight: bold;
+        &:hover,
+        &:focus,
+        &[aria-expanded="true"] {
+          background: $brightcolor;
+          color: $color;
+        }
+        &:after {
+          color: $color;
+          margin-top: 3px;
+        }
+      }
+
+      .collapse {
+        margin-top: 20px;
+      }
     }
   }
 }
