@@ -3,6 +3,9 @@
 
 Changelog
 ---------
+<b>Version 1.13.1</b>
+- Fix für Bug MForm Collapsing Accordion
+
 <b>Version 1.13.0</b>
 - Ausgabe für MForm / MBlock angepasst
 
