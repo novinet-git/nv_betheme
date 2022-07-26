@@ -3,6 +3,9 @@
 
 Changelog
 ---------
+<b>Version 1.14.0</b>
+- Selectfelder um Livesuche ergänzt
+
 <b>Version 1.13.1</b>
 - Fix für Bug MForm Collapsing Accordion
 

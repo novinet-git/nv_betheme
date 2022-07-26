@@ -18,6 +18,13 @@ if (file_exists($oBeTheme->addon->getAssetsPath("css/style.css"))) {
     rex_view::addCssFile($oBeTheme->addon->getAssetsUrl("css/style.css"));
 }
 
+if (!rex_plugin::get('ui_tools', 'selectize')->isAvailable()) {
+    rex_view::addCssFile($this->getAssetsUrl('vendor/selectize/selectize/dist/css/selectize.css'));
+    rex_view::addCssFile($this->getAssetsUrl('vendor/selectize/selectize/dist/css/selectize.bootstrap3.css'));
+    rex_view::addJsFile($this->getAssetsUrl('vendor/selectize/selectize/dist/js/standalone/selectize.min.js'));
+    rex_view::addJsFile($this->getAssetsUrl('vendor/selectize/rex_selectize.js'));
+}
+
 // Include backend assets
 if (rex::isBackend() && $oBeTheme->addon->getConfig("active")) {
     rex_extension::register('PACKAGES_INCLUDED', 'nvBeTheme_add_backend_assets', rex_extension::LATE);
@@ -25,6 +32,8 @@ if (rex::isBackend() && $oBeTheme->addon->getConfig("active")) {
     rex_extension::register('OUTPUT_FILTER', static function($ep) {
         
         $sSubject = $ep->getSubject();
+        $sSubject = str_replace('class="form-control selectpicker"','class="form-control selectpicker w-100" data-live-search="true"',$sSubject);
+        $sSubject = str_replace('class="form-control  selectpicker"','class="form-control  selectpicker w-100" data-live-search="true"',$sSubject);
         $sSubject = str_replace('<div class="checkbox','<div class="checkbox toggle',$sSubject);
         $sSubject = str_replace('<div class="radio','<div class="radio toggle switch',$sSubject);
         $ep->setSubject($sSubject);
