@@ -3,6 +3,9 @@
 
 Changelog
 ---------
+<b>Version 1.15.0</b>
+- Hintergrundgrafik ergänzt, Layout Navigation umgebaut
+
 <b>Version 1.14.0</b>
 - Selectfelder um Livesuche ergänzt
 
