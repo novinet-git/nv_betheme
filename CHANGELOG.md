@@ -3,6 +3,9 @@
 
 Changelog
 ---------
+<b>Version 1.15.1</b>
+- Bugfix mblock z-index und Hintergrundfarbe Tabs
+
 <b>Version 1.15.0</b>
 - Hintergrundgrafik ergänzt, Layout Navigation umgebaut
 

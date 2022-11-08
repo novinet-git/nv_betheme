@@ -1006,8 +1006,9 @@ a:hover .novinet-icon-logo2 {
 }
 
 .mblock_wrapper span.removeadded {
-  top: 12px;
+  top: 8px;
   right: 35px;
+  z-index: 20;
 }
 
 .rex-online {
@@ -1042,6 +1043,7 @@ a:hover .novinet-icon-logo2 {
 
 .rex-slice .panel-body .mform .mform-tabs .nav-tabs {
   background: $brightcolor;
+  background: $color;
 }
 
 .rex-slice .panel-body .mform .mform-tabs .nav-tabs > li a {
