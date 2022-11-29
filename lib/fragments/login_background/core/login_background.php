@@ -6,7 +6,7 @@
  */
 $oAddon = rex_addon::get('nv_betheme');
 ?>
-<?php $sBackground = $oAddon->getConfig('login_background_image') ? "/media/" . $oAddon->getConfig('login_background_image') : rex_url::addonAssets('nv_betheme', 'images/novinet-background-abstract.jpg'); ?>
+<?php $sBackground = $oAddon->getConfig('login_background_image') ? "/media/" . $oAddon->getConfig('login_background_image') : rex_url::addonAssets('nv_betheme', 'images/colorful-background.jpg'); ?>
 
 
 <picture class="rex-background">

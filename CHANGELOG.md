@@ -3,6 +3,9 @@
 
 Changelog
 ---------
+<b>Version 1.15.2</b>
+- Fix für statische Methode
+
 <b>Version 1.15.1</b>
 - Bugfix mblock z-index und Hintergrundfarbe Tabs
 
