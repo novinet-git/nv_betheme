@@ -3,6 +3,9 @@
 
 Changelog
 ---------
+<b>Version 1.15.3</b>
+- Bildurl Fix für Unterordner Installation (Danke @godsdog)
+
 <b>Version 1.15.2</b>
 - Fix für statische Methode
 - Neues Hintergrundbild für Login
