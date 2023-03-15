@@ -3,6 +3,9 @@
 
 Changelog
 ---------
+<b>Version 1.15.5</b>
+- Neues Hintergrundbild für Login
+
 <b>Version 1.15.4</b>
 - Bildurl Fix für Unterordner Installation (Danke @godsdog)
 
