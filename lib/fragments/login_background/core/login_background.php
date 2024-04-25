@@ -6,7 +6,7 @@
  */
 $oAddon = rex_addon::get('nv_betheme');
 ?>
-<?php $sBackground = $oAddon->getConfig('login_background_image') ? rex_url::media($oAddon->getConfig('login_background_image')) : rex_url::addonAssets('nv_betheme', 'images/colorful-background.jpg'); ?>
+<?php $sBackground = $oAddon->getConfig('login_background_image') ? rex_url::media($oAddon->getConfig('login_background_image')) : rex_url::addonAssets('nv_betheme', 'images/login-background.jpeg'); ?>
 
 
 <picture class="rex-background">
@@ -50,7 +50,7 @@ $oAddon = rex_addon::get('nv_betheme');
             <li><a href="https://www.redaxo.org" target="_blank" rel="noreferrer noopener">redaxo.org</a></li>
 
             <li class="rex-background-credits">
-                <?php $sCredits = $oAddon->getConfig('login_background_credits') ?: '<a href="https://novinet.de" target="_blank">Developed by novinet.de</a>';
+                <?php $sCredits = $oAddon->getConfig('login_background_credits') ?: '<a href="https://novinet.de" target="_blank">Developed by NOVINET</a>';
                 echo $sCredits; ?></li>
         </ul>
     </nav>

@@ -5,7 +5,8 @@
   font-weight: 300;
   font-display: swap;
   src: url("fonts/mada/Mada-Light.eot"); /* IE9 Compat Modes */
-  src: url("fonts/mada/Mada-Light.eot?#iefix") format("embedded-opentype"),
+  src:
+    url("fonts/mada/Mada-Light.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */ url("fonts/mada/Mada-Light.woff2") format("woff2"),
     /* Super Modern Browsers */ url("fonts/mada/Mada-Light.woff") format("woff"),
     /* Pretty Modern Browsers */ url("fonts/mada/Mada-Light.ttf") format("truetype"),
@@ -21,7 +22,8 @@
   font-weight: 400;
   font-display: swap;
   src: url("fonts/mada/Mada-Regular.eot"); /* IE9 Compat Modes */
-  src: url("fonts/mada/Mada-Regular.eot?#iefix") format("embedded-opentype"),
+  src:
+    url("fonts/mada/Mada-Regular.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */ url("fonts/mada/Mada-Regular.woff2") format("woff2"),
     /* Super Modern Browsers */ url("fonts/mada/Mada-Regular.woff") format("woff"),
     /* Pretty Modern Browsers */ url("fonts/mada/Mada-Regular.ttf") format("truetype"),
@@ -37,7 +39,8 @@
   font-weight: 500;
   font-display: swap;
   src: url("fonts/mada/Mada-Medium.eot"); /* IE9 Compat Modes */
-  src: url("fonts/mada/Mada-Medium.eot?#iefix") format("embedded-opentype"),
+  src:
+    url("fonts/mada/Mada-Medium.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */ url("fonts/mada/Mada-Medium.woff2") format("woff2"),
     /* Super Modern Browsers */ url("fonts/mada/Mada-Medium.woff") format("woff"),
     /* Pretty Modern Browsers */ url("fonts/mada/Mada-Medium.ttf") format("truetype"),
@@ -52,7 +55,9 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: local("Mada SemiBold"), local("Mada-SemiBold"),
+  src:
+    local("Mada SemiBold"),
+    local("Mada-SemiBold"),
     url(https://fonts.gstatic.com/s/mada/v8/7Au_p_0qnzeSde3iOCX2zw.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC,
     U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
@@ -65,7 +70,8 @@
   font-weight: 700;
   font-display: swap;
   src: url("fonts/mada/Mada-SemiBold.eot"); /* IE9 Compat Modes */
-  src: url("fonts/mada/Mada-SemiBold.eot?#iefix") format("embedded-opentype"),
+  src:
+    url("fonts/mada/Mada-SemiBold.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */ url("fonts/mada/Mada-SemiBold.woff2") format("woff2"),
     /* Super Modern Browsers */ url("fonts/mada/Mada-SemiBold.woff") format("woff"),
     /* Pretty Modern Browsers */ url("fonts/mada/Mada-SemiBold.ttf") format("truetype"),
@@ -81,7 +87,8 @@
   font-weight: 900;
   font-display: swap;
   src: url("fonts/mada/Mada-Bold.eot"); /* IE9 Compat Modes */
-  src: url("fonts/mada/Mada-Bold.eot?#iefix") format("embedded-opentype"),
+  src:
+    url("fonts/mada/Mada-Bold.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 */ url("fonts/mada/Mada-Bold.woff2") format("woff2"),
     /* Super Modern Browsers */ url("fonts/mada/Mada-Bold.woff") format("woff"),
     /* Pretty Modern Browsers */ url("fonts/mada/Mada-Bold.ttf") format("truetype"),
@@ -90,9 +97,66 @@
     U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* outfit-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  src: url("fonts/outfit/outfit-v11-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  src: url("fonts/outfit/outfit-v11-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  src: url("fonts/outfit/outfit-v11-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  src: url("fonts/outfit/outfit-v11-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  src: url("fonts/outfit/outfit-v11-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 800;
+  src: url("fonts/outfit/outfit-v11-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* outfit-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 900;
+  src: url("fonts/outfit/outfit-v11-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 body {
   background-color: #f8f9fa;
-  font-family: "Mada";
+  font-family: "Outfit";
   color: #222d45;
 }
 
@@ -162,9 +226,22 @@ a {
 .panel-body {
   border-radius: 0 0 4px 4px;
 }
+.rex-form-panel-footer,
 .panel-footer {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
+  border-top: 1px solid #f2f2f2 !important;
+  background: white !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+.panel-footer {
+  .rex-form-panel-footer {
+    border-top: none !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
 }
 
 .panel-add > .panel-heading,
@@ -203,6 +280,9 @@ a {
 .panel-heading {
   border-bottom: none;
   height: 40px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: auto;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   font-weight: bold;
@@ -277,6 +357,8 @@ a {
 
 .btn {
   border-radius: 4px !important;
+  border-radius: 0.5rem !important;
+  font-weight: 600;
 }
 
 .btn.gridblock-iscopied,
@@ -290,8 +372,8 @@ a {
 .btn-apply,
 .btn-edit,
 .alert.alert-success {
-  background-color: #6f9a15;
-  border-color: #2c876e;
+  background-color: #198754;
+  border-color: #198754;
 }
 
 .alert {
@@ -329,6 +411,33 @@ body.rex-is-logged-out .navbar-brand img {
   border-color: $color;
 }
 
+#rex-page-login {
+  .panel-default {
+    background-color: white !important;
+    color: #222d45;
+  }
+
+  .input-group-addon,
+  .input-group-btn .btn-view,
+  .form-control {
+    background: white !important;
+    border-color: #ced4da !important;
+  }
+
+  .rex-redaxo-logo-r,
+  .rex-redaxo-logo-e,
+  .rex-redaxo-logo-d,
+  .rex-redaxo-logo-a,
+  .rex-redaxo-logo-x,
+  .rex-redaxo-logo-o,
+  .rex-redaxo-logo-reg {
+    fill: $color !important;
+  }
+  .rex-redaxo-logo-cms {
+    fill: #222d45 !important;
+  }
+}
+
 .rex-nav-top {
   background-color: $color;
   z-index: 3;
@@ -346,7 +455,7 @@ body.rex-is-logged-out .navbar-brand img {
       opacity: 0.2;
       z-index: -1;
       background-size: cover;
-      background: url("images/novinet-background-sw.png");
+      background: url("images/novinet-background-abstract-sw.png");
     }
   }
 }
@@ -362,7 +471,7 @@ body.rex-is-logged-out .navbar-brand img {
 }
 
 .rextree .startarticle > a > i {
-  color: #6f9a15;
+  color: #198754;
 }
 .rextree h4 a {
   color: #fff;
@@ -465,7 +574,7 @@ a:hover .novinet-icon-logo2 {
     opacity: 0.2;
     z-index: -1;
     background-size: cover;
-    background: url("images/novinet-background-sw.png");
+    background: url("images/novinet-background-abstract-sw.png");
   }
 }
 
@@ -493,7 +602,7 @@ a:hover .novinet-icon-logo2 {
     opacity: 0.2;
     z-index: -1;
     background-size: cover;
-    background: url("images/novinet-background-sw.png");
+    background: url("images/novinet-background-abstract-sw.png");
   }
 }
 
@@ -728,7 +837,7 @@ a:hover .novinet-icon-logo2 {
         padding-right: 15px;
         a.btn-addgridmodule {
           color: #fff;
-          background-color: #6f9a15;
+          background-color: #198754;
 
           &:hover {
             background-color: #45986c;
@@ -1012,7 +1121,7 @@ a:hover .novinet-icon-logo2 {
 }
 
 .rex-online {
-  color: #6f9a15;
+  color: #198754;
 }
 
 .rex-offline {
@@ -1109,7 +1218,7 @@ a:hover .novinet-icon-logo2 {
       opacity: 0.2;
       z-index: -1;
       background-size: cover;
-      background: url("images/novinet-background-sw.png");
+      background: url("images/novinet-background-abstract-sw.png");
     }
 
     #module-preview-search {
@@ -1122,7 +1231,9 @@ a:hover .novinet-icon-logo2 {
 
       &:focus {
         border-color: white;
-        box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%), 0 0 8px $color;
+        box-shadow:
+          inset 0 1px 1px rgb(0 0 0 / 8%),
+          0 0 8px $color;
       }
     }
   }
@@ -1143,7 +1254,7 @@ a:hover .novinet-icon-logo2 {
       opacity: 0.2;
       z-index: -1;
       background-size: cover;
-      background: url("images/novinet-background-sw.png");
+      background: url("images/novinet-background-abstract-sw.png");
     }
     li {
       a {
@@ -1327,6 +1438,33 @@ a:hover .novinet-icon-logo2 {
       .collapse,
       .collapsing {
         margin-top: 20px;
+      }
+    }
+  }
+}
+
+.rex-nav-main-navigation {
+  .rex-nav-main-list {
+    li {
+      padding: 2px 10px;
+      cursor: pointer;
+      a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-right: 0;
+        border-radius: 1rem;
+        font-weight: 600;
+
+        i {
+          margin-right: 10px !important;
+        }
+      }
+
+      &.active a,
+      a:hover,
+      a:focus {
+        border-right: 0;
+        color: $color !important;
       }
     }
   }

@@ -3,6 +3,10 @@
 
 Changelog
 ---------
+<b>Version 1.16</b>
+- Neues Hintergrundbild für Login
+- Anpassung REDAXO 5.17
+
 <b>Version 1.15.5</b>
 - Neues Hintergrundbild für Login
 

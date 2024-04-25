@@ -1,2 +1,2 @@
 <?php
-$this->setConfig('generatefiles',true);
+$addon->includeFile(__DIR__.'/install.php');

@@ -3,7 +3,7 @@
 if (!$this->hasConfig()) {
     $this->setConfig([
             "serverName" => rex::getServerName(),
-            "color" => "#009ed1",
+            "color" => "#0084A4",
             "active" => "|1|",
             "style" => "light",
             "login_branding_active" => "|1|",

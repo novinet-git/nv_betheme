@@ -35,6 +35,10 @@
             $aSettings["serverName"] = '<img src="' . rex_url::media($aSettings["logo"]) . '">';
         }
 
+        if (!$aSettings["color"]) {
+            $aSettings["color"] = "#0084A4";
+        }
+
         $aSettings["brightcolor"] = $this->hex2rgba($aSettings["color"],"0.2");
 
         foreach ($aSettings as $sKey => $sVal) {

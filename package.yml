@@ -1,8 +1,8 @@
 # Alle hier gesetzten Werte können über `$addon->getProperty($key)` abgefragt werden
 
 package: nv_betheme # Pflichtfeld
-version: '1.15.5' # Pflichtfeld
-author: novinet GmbH & Co KG
+version: '1.16' # Pflichtfeld
+author: NOVINET GmbH & Co KG
 supportpage: https://novinet.de
 
     
