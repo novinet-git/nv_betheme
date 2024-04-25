@@ -1,2 +1,2 @@
 <?php
-$addon->includeFile(__DIR__.'/install.php');
+$this->includeFile(__DIR__.'/install.php');

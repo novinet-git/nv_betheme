@@ -3,6 +3,9 @@
 
 Changelog
 ---------
+<b>Version 1.16.1</b>
+- Fix update.php
+
 <b>Version 1.16</b>
 - Neues Hintergrundbild für Login
 - Anpassung REDAXO 5.17
