@@ -3,6 +3,9 @@
 
 Changelog
 ---------
+<b>Version 1.17</b>
+- Anpassungen REDAXO 5.17 Structure
+
 <b>Version 1.16.1</b>
 - Fix update.php
 

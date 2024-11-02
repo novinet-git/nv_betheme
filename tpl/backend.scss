@@ -189,11 +189,13 @@ a {
 
 .nav-tabs > li > a:hover {
   background-color: white !important;
+  background-color: $brightcolor !important;
   color: $color !important;
 }
 
 .nav-tabs > li.active > a {
   background-color: white !important;
+  background-color: $brightcolor !important;
 }
 
 .nav-pills > li > a,
@@ -586,24 +588,133 @@ a:hover .novinet-icon-logo2 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.rex-page-nav .nav-tabs {
-  background-color: $color;
-  position: relative;
-  border: none;
-  border-radius: 4px;
-  z-index: 5;
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.2;
-    z-index: -1;
-    background-size: cover;
-    background: url("images/novinet-background-abstract-sw.png");
+.rex-page-nav {
+  .nav-tabs {
+    background-color: $color;
+    position: relative;
+    border: none;
+    border-radius: 4px;
+    z-index: 5;
+    padding: 10px 10px !important;
+
+
+    > li {
+      a {
+        color: white !important;
+        padding: 5px 10px !important;
+        border-radius: 4px 4px 4px 4px !important;
+        background: transparent;
+        font-weight: bold;
+        margin: 5px;
+
+        &:hover {
+          background-color: $brightcolor !important;
+          background-color: white !important;
+          color: $color !important;
+        }
+      }
+      &.active {
+        a {
+          background-color: white !important;
+          color: $color !important;
+        }
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.2;
+      z-index: -1;
+      background-size: cover;
+      background: url("images/novinet-background-abstract-sw.png");
+    }
   }
+}
+
+
+.rex-page-nav.mform-tabs {
+  .nav-tabs {
+    background-color: $color;
+    position: relative;
+    border: none;
+    border-radius: 4px;
+    z-index: 5;
+    padding: 10px 10px !important;
+
+
+    > li {
+      a {
+        color: $color !important;
+        padding: 5px 10px !important;
+        border-radius: 4px 4px 4px 4px !important;
+        background: transparent;
+        font-weight: bold;
+        margin: 5px;
+
+        &:hover {
+          background-color: $brightcolor !important;
+          background-color: white !important;
+          color: $color !important;
+        }
+      }
+      &.active {
+        a {
+          background-color: white !important;
+          color: $color !important;
+        }
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.2;
+      z-index: -1;
+      background-size: cover;
+      background: url("images/novinet-background-abstract-sw.png");
+    }
+  }
+}
+
+
+.rex-page-nav2 .nav-tabs > li > a:not(.btn):hover {
+  background-color: white;
+  border-radius: 0;
+  border: 0;
+  color: #fff;
+}
+
+.rex-page-nav2 .nav-tabs > li > a:not(.btn) {
+  border: 0;
+  font-weight: bold;
+  background: none;
+  padding-bottom: 10px;
+  color: #fff;
+}
+
+.rex-page-nav2 .nav-tabs > li > a:not(.btn):hover {
+  border: 0;
+  background: white;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.rex-page-nav2 .nav-tabs > li.active > a:not(.btn),
+.rex-page-nav2 .nav-tabs > li.active > a:not(.btn):hover {
+  background-color: white;
+  color: white;
+  border-radius: 0;
+  border: 0;
+  padding-bottom: 10px;
 }
 
 .rex-page-nav .navbar {
@@ -642,36 +753,7 @@ a:hover .novinet-icon-logo2 {
   height: 40px;
 }
 
-.rex-page-nav .nav-tabs > li > a:not(.btn):hover {
-  background-color: white;
-  border-radius: 0;
-  border: 0;
-  color: #fff;
-}
 
-.rex-page-nav .nav-tabs > li > a:not(.btn) {
-  border: 0;
-  font-weight: bold;
-  background: none;
-  padding-bottom: 10px;
-  color: #fff;
-}
-
-.rex-page-nav .nav-tabs > li > a:not(.btn):hover {
-  border: 0;
-  background: white;
-  color: $color;
-  padding-bottom: 10px;
-}
-
-.rex-page-nav .nav-tabs > li.active > a:not(.btn),
-.rex-page-nav .nav-tabs > li.active > a:not(.btn):hover {
-  background-color: white;
-  color: $color;
-  border-radius: 0;
-  border: 0;
-  padding-bottom: 10px;
-}
 
 .pagination > .active > a,
 .pagination > .active > span,
@@ -1111,12 +1193,23 @@ a:hover .novinet-icon-logo2 {
   left: -10px;
   top: 0;
   bottom: 0;
-  border-left: dotted 4px #ccc;
+  border: 0;
+}
+
+.mblock_wrapper .sortitem {
+  margin-bottom: 20px;
+  border-bottom: dotted 4px #ccc;
+  padding: 20px 0px !important;
+  &:last-of-type {
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
 }
 
 .mblock_wrapper span.removeadded {
   top: 8px;
   right: 35px;
+  right: 0;
   z-index: 20;
 }
 
@@ -1148,15 +1241,30 @@ a:hover .novinet-icon-logo2 {
   margin-bottom: 0px;
   padding: 20px 0 0 0;
   background: transparent;
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
 }
 
 .rex-slice .panel-body .mform .mform-tabs .nav-tabs {
   background: $brightcolor;
   background: $color;
+  background: #dfe3e9;
+  border-bottom: 0 !important;
+  border-radius: 4px;
+  padding: 5px 10px;
+  &:before {
+    width: 0;
+    height: 0;
+    border: 0;
+  }
 }
 
 .rex-slice .panel-body .mform .mform-tabs .nav-tabs > li a {
   font-weight: bold;
+  margin: 10px 5px;
+  border-radius: 4px;
+  padding: 3px 10px;
 }
 
 .rex-slice .panel-body .mform .mform-tabs .nav-tabs > li.active > a:not(.btn),
